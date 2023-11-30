@@ -1,0 +1,119 @@
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+    padding: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.btn-mostrar {
+    background: linear-gradient(45deg, #4caf50, #2196f3);
+    border: 2px solid #1565c0;
+    border-radius: 10px;
+    color: #010101;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 50px;
+    /* Ajusta el espacio entre los botones según tus necesidades */
+    width: 350px;
+    height: 150px;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+}
+
+.btn-mostrar:hover {
+    background-color: #202020;
+}
+
+.intro-container {
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 300px;
+    width: 400px;
+}
+
+.intro {
+    color: #2c3e50;
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #ecf0f1;
+}
+
+.container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    /* Ajusta el espacio entre las filas según tus necesidades */
+}
+
+.container {
+    flex-basis: calc(50% - 10px);
+    /* Calcula el 50% del ancho y resta 10px para la separación */
+    background-color: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    /* Incluye el borde y el padding en el tamaño total del contenedor */
+}
+
+/* Estilos adicionales para el contenido de los contenedores si es necesario */
+.container:nth-child(odd) {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+.container:nth-child(even) {
+    background-color: #29b96c;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 0px
+    }
+
+    .btn-mostrar {
+        width: 50%;
+        height: 50%;
+        font-size: 10px;
+        margin: 2px;
+        
+    }
+
+    #domi {
+        width: 100px;
+    }
+    #dg{
+        width: 150px;
+        height: 36px;
+        align-items: center;
+       
+    }
+
+    .container {
+        flex-basis: 100%;
+    }
+}

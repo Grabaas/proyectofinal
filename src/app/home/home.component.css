@@ -1,0 +1,55 @@
+.contenedorPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* Altura del viewport */
+}
+
+/* Contenedor flex con dos filas */
+.contenedorFlex {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permitir que los elementos se envuelvan */
+    justify-content: space-between;
+    /* Distribuir espacio entre las filas */
+}
+
+/* Estilo para los divs */
+.miDiv {
+    width: 23%;
+    /* Ancho para dejar espacio entre los divs */
+    box-sizing: border-box;
+    /* Incluye el padding en el ancho del elemento */
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Centra el contenido dentro del div */
+}
+
+/* Estilo para las imágenes */
+.miDiv img {
+    max-width: 30%;
+    /* Ajusta la imagen al ancho del div */
+    max-height: 100%;
+    /* Ajusta la imagen a la altura del div */
+    border-radius: 10%;
+    /* Borde redondeado para la imagen */
+}
+
+/* @media screen and (max-width: 768px) {
+    .miDiv {
+        width: 48%;
+        margin-bottom: 50px;
+    }
+
+    .contenedorPrincipal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        margin: 10px;
+    }
+} */

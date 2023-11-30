@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="text-container">
+        <div class="button-container">
+            <button (click)="toggleContent(1)" class="btn-mostrar" id="dg">Datos Generales</button>
+            <button (click)="toggleContent(2)" class="btn-mostrar">Datos Escolares</button>
+            <button (click)="toggleContent(3)" class="btn-mostrar" id="domi">Domicilio</button>
+        </div>
+
+        <div class="intro"  *ngIf="showContent1">
+
+<div  class="container-wrapper">
+
+                <div class="row"  *ngFor="let alumno of alumnos; let i = index" >
+                  <div class="container">
+                    <p>Matricula</p>
+                  </div>
+                  <div class="container">
+                    <!-- Contenido del segundo contenedor -->
+                <p>{{alumno.Matricula}}</p>
+                  </div>
+                </div>
+                <div class="row" *ngFor="let alumno of alumnos; let i = index">
+                  <div class="container">
+                    <p>Nombre Completo</p>
+                </div>
+                  <div class="container" >
+                    <!-- Contenido del cuarto contenedor -->
+                    <p>{{alumno.nombre}}</p>
+                  </div>
+                </div>
+                <div class="row" *ngFor="let alumno of alumnos; let i = index">
+                  <div class="container">
+                    <p>Sexo</p>
+                </div>
+                  <div class="container">
+                    <!-- Contenido del sexto contenedor -->
+                    {{alumno.Sexo}}
+                  </div>
+                </div>
+                <div class="row" *ngFor="let alumno of alumnos; let i = index"> 
+                    <div class="container">
+                        <p>Nacionalidad</p>
+                    </div>
+                    <div class="container">
+                        {{alumno.Nacionalidad}}
+                      <!-- Contenido del segundo contenedor -->
+                    </div>
+                  </div>
+                  <div class="row" *ngFor="let alumno of alumnos; let i = index"> 
+                    <div class="container">
+                        <p>LugarDeNacimiento</p>
+                    </div>
+                    <div class="container">
+                        {{alumno.LugarDeNacimiento}}
+                      <!-- Contenido del cuarto contenedor -->
+                    </div>
+                  </div>
+                  <div class="row" *ngFor="let alumno of alumnos; let i = index">
+                    <div class="container">
+                        <p>CURP</p>
+                    </div>
+                    <div class="container">
+                        {{alumno.CURP}}
+                      <!-- Contenido del sexto contenedor -->
+                    </div>
+                  </div>
+                  <div class="row" *ngFor="let alumno of alumnos; let i = index">
+                    <div class="container">
+                        <p>Fecha de Nacimiento</p>
+                    </div>
+                    <div class="container">
+                        {{alumno.FechaNacimiento}}
+                      <!-- Contenido del sexto contenedor -->
+                    </div>
+                  </div>
+              </div>  <!-- aqui acaba -->     
+             </div>
+
+        <div class="intro" *ngIf="showContent2">
+ <div class="container-wrapper">
+                
+                <div class="row" *ngFor="let alumno of alumnos; let i = index">
+                 
+               
+                </div>
+                <div class="row" *ngFor="let alumno of alumnos; let i = index">
+                  <div class="container">
+                    <p>Escuela de procedencia</p>
+                </div>
+                  <div class="container">
+                    {{alumno.EscuelaDeProcedencia}}
+                    <!-- Contenido del sexto contenedor -->
+                  </div>
+                </div>
+                <div class="row" *ngFor="let alumno of alumnos; let i = index">
+                    <div class="container">
+                        <p>Nivel</p>
+                    </div>
+                    <div class="container">
+                        {{alumno.Nivel}}
+                      <!-- Contenido del segundo contenedor -->
+                    </div>
+                  </div>
+                  <div class="row" *ngFor="let alumno of alumnos; let i = index">
+                    <div class="container">
+                        <p>Carrera</p>
+                    </div>
+                    <div class="container">
+                        {{alumno.carrera}}
+                      <!-- Contenido del cuarto contenedor -->
+                    </div>
+                  </div>
+                  <div class="row" *ngFor="let alumno of alumnos; let i = index">
+                    <div class="container">
+                        <p>Plantel</p>
+                    </div>
+                    <div class="container">
+                        {{alumno.Plantel}}
+                      <!-- Contenido del sexto contenedor -->
+                    </div>
+                  </div>
+                  <div class="row" *ngFor="let alumno of alumnos; let i = index">
+                    <div class="container">
+                        <p></p>
+                    </div>
+                    <div class="container">
+                      <!-- Contenido del sexto contenedor -->
+                    </div>
+                  </div>
+              </div>        </div>
+
+
+        <div class="intro" *ngIf="showContent3">
+ <div class="container-wrapper">
+                <div class="row" *ngFor="let alumno of alumnos; let i = index">
+                  <div class="container">
+                    <p>Calle </p>
+                </div>
+                  <div class="container">
+                    {{alumno.Calle}}
+
+                    <!-- Contenido del sexto contenedor -->
+                  </div>
+                </div>
+                <div class="row" *ngFor="let alumno of alumnos; let i = index">
+                    <div class="container">
+                        <p>Colonia</p>
+                    </div>
+                    <div class="container">
+                        {{alumno.Colonia}}
+
+                      <!-- Contenido del segundo contenedor -->
+                    </div>
+                  </div>
+                  <div class="row" *ngFor="let alumno of alumnos; let i = index">
+                    <div class="container">
+                        <p>Municipio</p>
+                    </div>
+                    <div class="container">
+                        {{alumno.Municipio}}
+
+                      <!-- Contenido del cuarto contenedor -->
+                    </div>
+                  </div>
+                  <div class="row" *ngFor="let alumno of alumnos; let i = index" >
+                    <div class="container">
+                        <p>Estado</p>
+                    </div>
+                    <div class="container">
+                        {{alumno.Estado}}
+
+                      <!-- Contenido del sexto contenedor -->
+                    </div>
+                  </div>
+                  <div class="row" *ngFor="let alumno of alumnos; let i = index">
+                    <div class="container">
+                        <p>Telefono</p>
+                    </div>
+                    <div class="container">
+                        {{alumno.Telefono}}
+
+                      <!-- Contenido del sexto contenedor -->
+                    </div>
+                  </div>
+              </div>       
+             </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+/* Estilo responsivo para la tabla */
+table {
+    border-collapse: collapse;
+    width: 80%; /* Puedes ajustar este valor según tus necesidades */
+    max-width: 800px; /* Establece un ancho máximo para la tabla */
+    margin: auto;
+    font-size: 14px; /* Ajusta el tamaño de la fuente según tus necesidades */
+}
+
+th, td {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+/* Media query para dispositivos más pequeños */
+@media screen and (max-width: 600px) {
+    table {
+        font-size: 12px; /* Reduce aún más el tamaño de la fuente en dispositivos más pequeños si es necesario */
+   
+    }
+}
